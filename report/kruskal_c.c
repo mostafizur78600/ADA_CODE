@@ -36,8 +36,9 @@ int compare(const void* a, const void* b) {
     return edge1->weight - edge2->weight;
 }
 
-void kruskalMST(Graph* graph) {
+int kruskalMST(Graph* graph) {
     int parent[MAX_VERTICES];
+    int cost=0;
     memset(parent, -1, sizeof(parent));
     qsort(graph->edges, graph->num_vertices, sizeof(Edge), compare);
     int e = 0;
@@ -48,10 +49,12 @@ void kruskalMST(Graph* graph) {
         int y = find(parent, next_edge.dest);
         if (x != y) {
             printf("%d - %d : %d\n", next_edge.src, next_edge.dest, next_edge.weight);
+            cost+=next_edge.weight;
             union_(parent, x, y);
             e++;
         }
     }
+    return cost;
 }
 
 int main() {
@@ -112,6 +115,6 @@ int main() {
     graph->edges[13].src = 7;
     graph->edges[13].dest = 8;
     graph->edges[13].weight = 7;
-    kruskalMST(graph);
+    printf("\nThe mst cost is : %d",kruskalMST(graph));
     return 0;
 }
