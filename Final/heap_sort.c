@@ -2,7 +2,9 @@
 Date: 27/01/2023
 NAME: Mostafizur Rahman
 
-Program for find Build_Max_Heap
+[Heaps and Heap Sort]: Write a program to implement the Build-Max-Heap(), 
+Max-heapify() and Heapsort() procedures. The elements can be read from 
+a file or can be generated using the random number generator.
 */
 
 #include <stdio.h>

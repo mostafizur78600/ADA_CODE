@@ -2,12 +2,15 @@
 Name: Mostafizur Rahman
 Date: 10-02-2023
 
-Program for Quick Sort
+[Quick Sort]: Write a program to sort a given set of elements using 
+the Quick Sort method. The elements can be read from a file or can 
+be generated using the random number generator. 
+Implement the Partition() and QuickSort() procedures.
 */
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define n 1000
+#define n 100
 int partition(int a[], int p, int r)
 {
     int x = a[r], i = p - 1, temp;

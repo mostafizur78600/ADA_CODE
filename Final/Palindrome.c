@@ -1,3 +1,12 @@
+/*
+Date: 28/05/2023
+Name: Mostafizur Rahman
+
+[Palindrome Check]: Write a program using recursion to check if a string 
+is a palindrome or not (a palindrome is a string that's the same when 
+reads forwards and backwards.)
+*/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>

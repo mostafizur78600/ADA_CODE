@@ -2,14 +2,17 @@
 Name: Mostafizur Rahman
 Date: 14-02-2023
 
-Program for Merge Sort
+Merge Sort]: Write a program to sort a given set of elements using 
+the Merge Sort method. The elements can be read from a file or can 
+be generated using the random number generator. 
+Implement the Merge() and MergeSort() procedures.
 */
 #include <stdio.h>  // Include standard input/output library
 #include <stdlib.h> // Include standard library
 #include <time.h>   // Include time library
 #include <math.h>   // Include math library
 
-#define n 1000 // Define a constant integer n with a value of 1000
+#define n 100 // Define a constant integer n with a value of 100
 
 // This function merges two sorted arrays into one sorted array
 void merge(int A[], int p, int q, int r)

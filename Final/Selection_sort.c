@@ -2,14 +2,17 @@
 Date: 17/01/2023
 Name: Mostafizur Rahman
 
-Selection Sort
+[Selection Sort]: Write a program to sort a given set of elements using 
+the Selection Sort method. The elements can be read from a file or can 
+be generated using the random number generator. Implement the 
+SelectionSort() procedure.
 */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-#define n 1000   // Define a constant n as 100
+#define n 100   // Define a constant n as 100
 
 // Function to perform selection sort on an array of integers
 void selection_sort(int array[], int size)
